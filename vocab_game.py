@@ -9,7 +9,7 @@ if "ans1_val" not in st.session_state:
 if "ans2_val" not in st.session_state:
     st.session_state.ans2_val = ""
 if "ans3_val" not in st.session_state:
-    st.session_state.ans3val = ""
+    st.session_state.ans3_val = ""
 if "ans4_val" not in st.session_state:
     st.session_state.ans4_val = ""
 
@@ -28,7 +28,7 @@ def reset_game():
 # 📌 ฟังก์ชัน MessageBox (Dialog)
 # ----------------------------------------------------
 @st.dialog("📊 สรุปผลการเล่นเกม")
-def show_result_dialog(ans1, ans2):
+def show_result_dialog(ans1, ans2, ans3, ans4):
     st.balloons()
     score = 0
 
