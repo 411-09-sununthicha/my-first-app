@@ -62,70 +62,70 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
     u_ans10 = ans10.strip().lower()
 
     # ตรวจข้อ 1
-    if u_ans1 == "apple":
+    if u_ans1 == "พัดลม":
         st.success("✅ ข้อ 1: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")
 
     # ตรวจข้อ 2
-    if u_ans2 == "fish":
+    if u_ans2 == "ร่ม":
         st.success("✅ ข้อ 2: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
 
     # ตรวจข้อ 3
-    if u_ans3 == "apple":
+    if u_ans3 == "กระจก":
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
     # ตรวจข้อ 4
-    if u_ans4 == "fish":
+    if u_ans4 == "ตู้เย็น":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
       
     # ตรวจข้อ 5
-    if u_ans5 == "apple":
+    if u_ans5 == "หมอน":
         st.success("✅ ข้อ 5: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans5}')")
 
     # ตรวจข้อ 6
-    if u_ans6 == "fish":
+    if u_ans6 == "แปรงฟัน":
         st.success("✅ ข้อ 6: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 6: ยังไม่ถูกต้อง (คุณตอบ '{u_ans6}')")
       
     # ตรวจข้อ 7
-    if u_ans7 == "apple":
+    if u_ans7 == "แว่นตา":
         st.success("✅ ข้อ 7: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 7: ยังไม่ถูกต้อง (คุณตอบ '{u_ans7}')")
 
     # ตรวจข้อ 8
-    if u_ans8 == "fish":
+    if u_ans8 == "กระเป๋าเป้":
         st.success("✅ ข้อ 8: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 8: ยังไม่ถูกต้อง (คุณตอบ '{u_ans8}')")
             
     # ตรวจข้อ 9
-    if u_ans9 == "apple":
+    if u_ans9 == "กรรไกร":
         st.success("✅ ข้อ 9: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 9: ยังไม่ถูกต้อง (คุณตอบ '{u_ans9}')")
 
     # ตรวจข้อ 10
-    if u_ans10 == "fish":
+    if u_ans10 == "รองเท้า":
         st.success("✅ ข้อ 10: ถูกต้อง")
         score += 1
     else:
