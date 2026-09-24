@@ -130,7 +130,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         score += 1
     else:
         st.error(f"❌ ข้อ 10: ยังไม่ถูกต้อง (คุณตอบ '{u_ans10}')")
-    # ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มตรวจข้อ 3, 4 ตรงนี้
+    
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
@@ -210,7 +210,7 @@ st.session_state.ans8_val = ans8
 st.session_state.ans9_val = ans9
 st.session_state.ans10_val = ans10
 
-# ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มข้อ 3, 4 ตรงนี้
+
 
 
 # 4. ปุ่มส่งคำตอบ
@@ -227,4 +227,3 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10)
 
 st.divider()
-st.write("นางสาวดีใจ ยิ้มแย้ม เลขที่ 5 ม.4/5")
