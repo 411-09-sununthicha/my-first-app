@@ -147,7 +147,7 @@ st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
 # 2. แถบแสดงเวลานับถอยหลัง
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    time_left = int(60 - (time.time() - st.session_state.start))
+    time_left = int(45 - (time.time() - st.session_state.start))
 
     if time_left > 0:
         st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
@@ -159,43 +159,43 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: หมุนเป็นกังหัน ทำให้เรารู้สึกเย็น 🌀",
+    "ข้อ 1: _ ด _ _ หมุนเป็นกังหัน ทำให้เรารู้สึกเย็น 🌀",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: กางออกเหมือนเห็ด ช่วยกันแดดกันฝน ☂️",
+    "ข้อ 2: _ ม กางออกเหมือนเห็ด ช่วยกันแดดกันฝน ☂️",
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: ส่องหน้าทีไร เห็นตัวเองสวย/หล่อ 🪞",
+    "ข้อ 3: _ ร _ _ _ ส่องหน้าทีไร เห็นตัวเองสวย/หล่อ 🪞",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: ตู้ใหญ่ใจดี ข้างในหนาวสั่น ใช้เก็บอาหาร 🧊",
+    "ข้อ 4: _ _ ย็ น ตู้ใหญ่ใจดี ข้างในหนาวสั่น ใช้เก็บอาหาร 🧊",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
-    "ข้อ 5: นุ่มนิ่มอยู่บนเตียง คอยรองหัวตอนนอน 🛌",
+    "ข้อ 5: ห ม _ น นุ่มนิ่มอยู่บนเตียง คอยรองหัวตอนนอน 🛌",
     value=st.session_state.ans5_val,
 )
 ans6 = st.text_input(
-    "ข้อ 6: มีขนที่หัว ชอบกินยาสีฟัน คอยถูฟันให้สะอาด 🪥",
+    "ข้อ 6: _ _ ป ร ง _ น มีขนที่หัว ชอบกินยาสีฟัน คอยถูฟันให้สะอาด 🪥",
     value=st.session_state.ans6_val,
 )
 ans7 = st.text_input(
-    "ข้อ 7: มีขาเกี่ยวหู มีกระจกสองข้าง ช่วยให้คนสายตาสั้นมองชัด 👓",
+    "ข้อ 7: _ _ ว่ น ต _ มีขาเกี่ยวหู มีกระจกสองข้าง ช่วยให้คนสายตาสั้นมองชัด 👓",
     value=st.session_state.ans7_val,
 )
 ans8 = st.text_input(
-    "ข้อ 8: อยู่บนหลังเรา ใส่สมุดหนังสือไปโรงเรียน 🎒",
+    "ข้อ 8: ก ร _ _ ป๋ _ _ ป้ อยู่บนหลังเรา ใส่สมุดหนังสือไปโรงเรียน 🎒",
     value=st.session_state.ans8_val,
 )
 ans9 = st.text_input(
-    "ข้อ 9: อ้าปากงับๆ ตัดกระดาษขาดเป็นสองท่อน ✂️",
+    "ข้อ 9: ก _ _ _ ก ร อ้าปากงับๆ ตัดกระดาษขาดเป็นสองท่อน ✂️",
     value=st.session_state.ans9_val,
 )
 ans10 = st.text_input(
-    "ข้อ 10: อยู่ใต้เท้าเราเสมอ คอยปกป้องเวลาเดิน 👟",
+    "ข้อ 10: ร _ ง _ ท้ _ อยู่ใต้เท้าเราเสมอ คอยปกป้องเวลาเดิน 👟",
     value=st.session_state.ans10_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
